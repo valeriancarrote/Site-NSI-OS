@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Windows</title>
+  <script src="https://unpkg.com/winbox@0.2.82/dist/winbox.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+
+</head>
+  <body id="bodidé">
+    <!-- En-tête -->
+    <header>
+      <!-- Lien de retour à la page de départ -->
+      <div class="barre_horizontale_Windows">
+        <a href="startpage.html" id="lien_retour_Windows">&larr; Retourner sur la page d'accueil </a>
+      </div>
+    </header>
+
+    <main>
+
+      <div style="display: none" > 
+        <!-- Fenêtre contenant le titre du sujet -->
+        <p id="window_title" class="window_texte"> Window 🔒 </p>
+
+        <!-- Fenêtre contenant le logo de Windows -->
+        <img src="image/icon_windows.png" id="window_iconn" alt="logo de Windows">
+
+        <!-- Fenêtre contenant la description de Windows -->
+        <textarea  id="window_description" class="window_texte" > Windows, c'est LE systeme d'exploitation le plus connu, le plus utilisé, et le plus répendu à ce jour. 
+            En effet, Windows représente 72% des OS utilisé dans le monde.     </textarea >
+        
+        <!-- Fenêtre contenant deux boutons pour acceder aux avantages ou aux inconvénients -->
+        <div id="window_menu" class="window_texte">
+
+          <!-- Boutton ouvrant la fenêtre contenant les avantages -->
+          <button id="Button_green" onclick="openavengtage()">Voire les aventages </button>
+
+          <!-- Boutton ouvrant la fenêtre contenant les inconvénients -->
+          <button id="Button_red" onclick="openinvonvégant()"> Voire les inconvénients </button>
+        </div>
+
+        <!-- Les avantages -->
+        <div id="Aventage">    
+          <p class="window_texte" id="titre_aventage"> Aventages : </p>
+          <!-- Liste des avantages -->
+          <ul class="window_texte" id="list_aventage">
+            <li>💻 Assez intuitif</li>
+            <li>🎮 Le seul OS vraiment stable et prévu pour le gaming</li>
+            <li>📲 La plupart des logiciels et applications sont disponibles</li>
+            <li>🧖‍♂️ Assez grand support materiel </li>
+          </ul>
+        </div>
+
+        <!-- Les inconvénients -->
+        <div id="inconvégant">    
+          <p class="window_texte" id="titre_aventage"> Inconvénients : </p>
+          <!-- Liste des inconvinients -->
+          <ul class="window_texte">
+            <li>👾 Passoire à virus </li>
+            <li>💸 Lisence assez chère </li>
+            <li>💍 Enorme utilisation de ressourse </li>
+            <li>🧖‍♂️ Mise à jour imposé/obligatoire  </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </main> 
+    <!-- Lie la page html à du javascript  -->
+    <script src="script.js"></script>
+
+    <!-- Encore rien d'intéréssant -->
+  </body>
+</html>

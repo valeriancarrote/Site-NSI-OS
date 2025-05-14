@@ -1,0 +1,451 @@
+/****************   Startpage :   ****************/
+
+
+/* Bouttons contenant des images et redirigeant vers les autres pages : */
+
+    .start {
+        font-style: inherit;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    button {
+        flex: 1;
+        height: 100vh;
+        transition: flex-grow 0.4s ease;
+        border: none;
+        padding: 0;
+        width: 33.333333333333333333333333%; 
+    }
+
+    /* Réaction des bouttons si survolé */
+    button:hover {
+        flex-grow: 2;
+    }
+
+    /* Fonds de chaque boutton */
+    .linux {
+        background-color : #0077B6;
+        display: inline-block;
+    }
+
+    .Window {
+        background-color :  #4CC9F0; 
+        display: inline-block;
+    }
+
+    .MacOS {
+        background-color : #CAF0F8; 
+        display: inline-block;
+    }
+
+    /* Logo sur les bouttons */
+    .image_icon { 
+        width: 200px;
+    }
+
+
+
+/****************   Page Linux :  ****************/
+
+
+/* Corps de la page */
+
+    .linouxx {
+        background-color: black;
+        position: absolute;
+    }
+
+
+/* Lien de retour à la page de départ */
+
+    #fleche_ret {
+        position: fixed;
+
+        right: 20px;
+        background-color: black;
+        color: green;
+        font-family: "Cutive Mono", monospace;
+        font-size: 16px;
+        text-decoration: none;
+        border: 1px solid green;
+        padding: 8px ;
+        transition: transform 0.2s ease, background-color 0.2s;
+        z-index: 1000;
+    }
+
+    #fleche_ret:hover {
+        transform: translateX(-5px);
+        color: #00ff00;
+    }
+
+/* Mise en page des textes de la page */
+
+    /* Mise en page du titre de la page */
+    #linux_texte_titre { 
+        color : green ;
+        font-family: "Cutive Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        margin-left: 5%;
+    }
+
+    /* Mise en page des textes de la page */
+    .le_texte_de_linux {
+        color : green ;
+        font-family: "Cutive Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        width : 800px ;
+        margin-left: 5%;
+        
+        
+    }  
+
+    /* Mise en page des textes de commandes de la page */
+    .texte_comand {
+        color : green ;
+        font-family: "Cutive Mono", monospace;
+        font-style: normal;
+        width : 600px ;
+        font-weight : bold ; 
+        line-height: 1.5;
+    }
+
+    /* Mise en page du dernier texte de commande de la page */
+    #terminal_outtt {
+        display: inline-block;
+        min-width: 5px;
+        background: none;
+        border: none;
+        outline: none;
+        color: green;
+        font-family: 'Cutive Mono', monospace;
+        font-size: 1em;
+        width: 70%;
+    }
+
+
+/* Le tableau des distribution créées sur Linux */
+
+    /* Mise en page du tableau */
+    table, th, td {
+        border-collapse: collapse;
+        border: 1px solid ;  
+        border-color : green ;
+        padding: 10px; 
+        background-color: #0f0f10;
+    }
+
+    #tabllloi {
+        margin-left: 5%;
+        width: 90%;
+        max-width: 800px;
+        margin-top: 20px;
+    }
+
+    #tabllloi td {
+        vertical-align: top;
+    }
+
+    /* Mise en page des logos du tableau */
+    .image_dist {
+        width: 100px;
+    }
+
+    /* Mise en page de la description du tableau */
+    #fun {
+        padding-top: 0px;
+        padding: 0px; 
+    }
+
+
+/* Avantages et Inconvénients */
+
+    /* Titres des avantages et inconvénients */
+    #tile_smal_lin {
+        font-size: 20px;
+    }
+
+    /* Les listes des avantages et des inconvénients */
+    .la_liste { 
+        line-height: 1.5
+        
+    }
+
+
+/* Rien d'intéressant à part beaucoup de place */
+
+    #nothing_intersting {
+        margin-top: 2000px;
+    }
+
+    
+
+/****************   Page Windows  ****************/
+
+
+/* Corps de la page */
+    #bodidé {
+        background-image: url("image/window_background.jpg");
+        background-size: 100vw;
+        height: 80vh;
+    }
+
+
+/* Barre horizontale : */
+
+    .barre_horizontale_Windows{
+        position: fixed;
+        top: 0;
+        right: 0px;
+
+        width: 100%;
+        height: 46px;
+        margin: 0;
+        padding: 0;
+        background-color: #0077B6;
+        z-index: 20;
+    }
+
+    /* Lien */
+    #lien_retour_Windows {
+        font-family: "Cal Sans", sans-serif;
+        float: right;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 12px 25px;
+        text-decoration: none;
+    }
+
+    /* Réaction du lien si survolé */
+    #lien_retour_Windows:hover {
+        background-color: #0a26c5;
+        transform: scale(1.1,1.1);
+    }
+
+
+/* Mise en page des textes de la page */
+    .window_texte {
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }        
+
+/* Encadré du titre */
+    #window_title {
+        font-size: 70px;
+        margin: 10px;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+
+/* Encadré de la description */
+
+    /* Zone de texte */
+    textarea.window_texte {
+        resize: none;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        font-size: 1em;
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+
+    #window_description {
+        font-size: 20px;
+    }
+
+
+/* Encadré du logo */
+    #window_iconn {
+        width: 200px;
+        height: 200px;
+    }
+
+
+/* Encadré contenant 2 bouttons */
+
+    /* Mise en page de l'encadré et des bouttons */
+    #window_menu button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    width: 200px;
+    height: 50px;
+    }
+
+    /* Les deux bouttons */
+    #Button_green {
+        background-color: #91ff42;
+        transition: background-color 0.2s;
+    }
+    
+    #Button_red {
+        background-color: #ff4242;
+        transition: background-color 0.2s;
+    }
+
+    /* Réaction des bouttons si survolé */
+    #Button_green button:hover {
+        background-color: #1eff00;
+    }
+
+    #Button_red button:hover {
+        background-color: #ff0000;
+    }
+
+
+/* Titre avantage et inconvénients */
+    #titre_aventage {
+        font-size: 20px;
+    }
+
+
+
+/****************   Page MacOS   ****************/
+
+
+/* Corps de la page */
+    #corps{
+        background-color:#CAF0F8;
+    }
+
+
+/* Barre horizontale : */
+
+    .barre_horizontale_MacOS{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        list-style-type: none;
+        height: 46px;
+        margin: 0;
+        padding: 0;
+        background-color: #0077B6;
+        z-index: 20;
+        font-family: 'Lucida Grande', 'Varela', sans-serif;
+        font-style: normal;
+    }
+
+    /* Lien footer */
+    #raccourci_footer {
+        float: left;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 12px 20px;
+        background-color: #0077B6;
+    }
+
+    /* Lien de retour vers la page d'accueil*/
+    #lien_retour_MacOS {
+        float: right;
+        display: block;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 12px 25px;
+        text-decoration: none;
+        background-color: #0077B6;
+    }
+
+    /* Réaction du lien si survolé */
+    #lien_retour_MacOS:hover, #raccourci_footer:hover {
+        background-color: #0a26c5;
+        transform: scale(1.1,1.1);
+    }
+
+
+/* Titre MacOS : */
+
+    #Bloc_titre{
+        margin-top: 50px;
+        margin-bottom: 60px;
+        background-color:#48cae4;
+    }
+
+    #Titre_MacOS{
+        text-align: center;
+        font-family: 'Lucida Grande', 'Varela', sans-serif;
+        font-style: normal;
+        font-size: 50px;
+        padding: 3%;
+    }
+
+
+/* Blocs contenant les textes et les images : */
+
+    .Bloc{
+        width: 75%;
+        height: 3%;
+        margin-left: 12%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        background-color: aliceblue;
+        border: 2px solid #0077B6;
+        border-radius: 5px;
+        overflow: auto;
+        float: left;
+    }
+
+    /* Réaction des blocs si survolé */
+    .Bloc:hover{
+        transform: scale(1.2,1.2);
+
+    }
+
+    /* Mise en page des textes de la page */
+    .textes_MacOS {
+        float: left;
+        padding: 5%;
+        width: 40%;
+        height: 40%;
+        overflow: auto;
+        font-family: 'Lucida Grande', 'Varela', sans-serif;
+        font-style: normal;
+    }
+
+    /* Mise en page des image de la page */
+    .images_MacOS {
+        padding: 5%;
+        width: 40%;
+        height: 40%;
+        float: right;
+    }
+
+    #imglogoMacOS{
+        width: 75%;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    #img_avantage_inconvénients{
+        width: 75%;
+    }
+
+    /* Footer de la page */
+    #footer{
+        width: 100%;
+        float: inline-end;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 5px;
+        background-color: #00B4D8;
+    }
+
+
+/* Ce n'est pas ici que vous allez trouver quelque chose d'interssant. Essayez d'aller voir les pinguins ils ont beaucoup de contact. */

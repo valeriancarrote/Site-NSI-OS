@@ -1,0 +1,81 @@
+/*
+
+Commentaires
+
+*/
+h1,h2,h3,div,span,body, ul{
+
+margin: 0;
+
+padding: 0;
+
+}
+
+#global{
+
+
+
+min-width:800px;
+
+}
+
+body {
+
+font-family: 'Permanent Marker', 'Poppins', sans-serif;
+font-size: 12px;
+font-style: inherit;
+
+}
+#logo,#logoNSI {
+    height:auto;
+    width:100%;
+}
+h1{
+  font-family: 'Lato', cursive;
+  font-size:50px;
+  text-align:center;
+  color:red;
+  background-color: #ae23d5;
+}
+
+/**********************************************Menu************************************************************/
+#MenuHorizontal li { 
+display : inline;
+padding : 0 20px;
+font-size:20px;
+ 
+}
+
+#MenuHorizontal ul{
+  text-align:center;
+  margin:10px 0px 20px 0px;
+}
+
+#MenuHorizontal a{
+  text-decoration:none;
+  color:black;
+}
+
+/***************************** style des publications *************************************************************/
+.texte{
+  
+  margin-left:320px;
+  height:200px;
+  font-size:16px;
+  text-align:left;
+}
+.date{
+ float:left;
+  height:200px;
+  width:300px;
+  padding-left:20px;
+ 
+}
+h3{
+  font-style:bolder;
+  font-size:18px;
+}
+#footer{
+  text-align:center;
+  margin-top:50px;
+}
